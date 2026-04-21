@@ -74,7 +74,7 @@ async function submitFeedback(){
     return;
   }
 
-  const res = await fetch("/api/sendFeedback",{
+  const res = await fetch("/api/sendFeedback.js",{
     method:"POST",
     headers:{"Content-Type":"application/json"},
     body: JSON.stringify({name,email,message})
